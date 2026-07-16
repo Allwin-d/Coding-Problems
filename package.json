@@ -1,0 +1,25 @@
+{
+  "name": "coding-problems",
+  "version": "1.0.0",
+  "description": "A curated collection of coding problem solutions in JavaScript, organized by topic to strengthen my Data Structures &amp; Algorithms and problem-solving skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allwin-d/Coding-Problems.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allwin-d/Coding-Problems/issues"
+  },
+  "homepage": "https://github.com/Allwin-d/Coding-Problems#readme",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
