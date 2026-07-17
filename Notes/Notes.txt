@@ -1,0 +1,11 @@
+1) let map = new Map<number, number>(); // Map stores data as key-value pairs.
+// Keys can be numbers, strings, booleans, objects, etc.
+  
+eg: const map = new Map();
+map.set("Name","Allwin");
+map.set(8,2001);
+map.set(false,"isMarried");
+
+console.log(map) //Map(3) { 'Name' => 'Allwin', 8 => 2001, false => 'isMarried' }
+
+

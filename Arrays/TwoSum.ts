@@ -1,5 +1,5 @@
 const TwoSum = (nums: number[], target: number) => {
-  let map = new Map(); // Map stores data as key-value pairs.
+  let map = new Map<number, number>(); // Map stores data as key-value pairs.
   // Keys can be numbers, strings, booleans, objects, etc.
   // Here, the key is the number from the array, and the value is its index.
 
