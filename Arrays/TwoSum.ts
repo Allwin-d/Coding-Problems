@@ -1,19 +1,24 @@
-const TwoSum = (nums: number[], target: number) => {
-  let map = new Map<number, number>(); // Map stores data as key-value pairs.
-  // Keys can be numbers, strings, booleans, objects, etc.
-  // Here, the key is the number from the array, and the value is its index.
-
-  for (let i = 0; i < nums.length; i++) {
-    let diff = target - nums[i];
+const TwoSum = (arr: number[], target: number) => {
+  let map = new Map();
+  for (let i = 0; i < arr.length; i++) {
+    const diff = target - arr[i];
     if (map.has(diff)) {
-      // has() checks whether the given key exists in the map and  Average time complexity is O(1).
-      return [i, nums.indexOf(diff)];
+      return [i, map.get(diff)]; //this will give the index , because we stored value as key and index as value..
     }
-    map.set(nums[i], i); // Store the current number as the key and its index as the value.
+    map.set(arr[i], i);
   }
-  return -1;
 };
 
-const nums = [3, 2, 4];
-const target = 6;
-console.log(TwoSum(nums, target));
+const arr = [2, 7, 11, 15]; //answer is [0,1];
+const target = 9;
+const answer = TwoSum(arr, target);
+console.log("Answer : ", answer);
+
+// Time Complexity:
+// The loop can process all n elements.
+// Map operations (has, get, set) are O(1) on average.
+// Therefore, T.C. = O(n).
+
+// Space Complexity:
+// In the worst case, Map can store n elements.
+// Therefore, S.C. = O(n).
