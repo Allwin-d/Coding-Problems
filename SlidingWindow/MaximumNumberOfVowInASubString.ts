@@ -29,7 +29,6 @@ const k = 3;
 const answer = MaximumNumberOfVowInASubString(s, k);
 console.log("Answer : ", answer);
 
-
-//Time and Space Complexity 
+//Time and Space Complexity
 //The time complexity is o(n) because combining both the for loops it runs the length of an input string so o (N);
 //Space complexity , we are using constant space for the variables like count, maxVowel,i and right so its o(1);
